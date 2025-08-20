@@ -12,7 +12,7 @@ import React , {useState} from 'react'
   return (
     <div>
       <form className='TodoForm' onSubmit={handleSubmit}>
-        <input type="text" value={value} className='todo-input' placeholder='type task here!' onChange={(e) => {setValue(e.target.value);}}/>
+        <input type="text" className='todo-input' placeholder='type task here!' onChange={(e) => {setValue(e.target.value);}}/>
         <button type='submit' className='todo-btn'>Add</button>
       </form>
       
